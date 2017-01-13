@@ -1,25 +1,22 @@
 (function($) {
 
 jQuery(document).ready(function() {
-  
-  //lightbox
-  $(document).ready(function(){
-    $('a').nivoLightbox();
-  });
+
+
 	//this code for the croll animation
   $(document).ready(function () {
     $(document).on("scroll", onScroll);
-    
+
     //smoothscroll
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
-        
+
         $('a').each(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
-      
+
         var target = this.hash,
             menu = target;
         $target = $(target);
@@ -46,7 +43,7 @@ function onScroll(event){
         }
     });
 }
-	
+
 
     //this code is for header
    jQuery(window).scroll(function() {
@@ -59,7 +56,7 @@ function onScroll(event){
       else{
         jQuery(".logo").css({"margin-top": "8px", "border-bottom": "0"});
          jQuery(".navbar-default").css({"margin-top": "25px", "margin-bottom": "15px"});
-        
+
       }
    });
 
