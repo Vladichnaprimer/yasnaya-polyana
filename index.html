@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Vladich">
     <title>База отдыха Ясная поляна</title>
     <link rel="shortcut icon" href="img/trees.png">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <script src="https://use.fontawesome.com/a2988e234a.js"></script>
     <script>
@@ -63,44 +63,41 @@
 </head>
 
 <body>
-    <!-- ====================================================
-	header section -->
     <header class="top-header">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="row header-row">
-                <div class="col-md-12">
-                    <nav class="navbar navbar-default">
-
-                        <div class="navbar navbar-brand"><a href="#sec1" style="margin-bottom: 10px;"><img src="img/trees.png" style="height: 30px; width: 30px; "/> Ясная поляна</a></div>
-                        <div class="container-fluid">
-
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-                                <ul class="nav navbar-nav navbar-right" style="margin-top: 5px;">
-                                    <li><a href="#sec1">Главная</a></li>
-                                    <li><a href="#sec2">О нас</a></li>
-                                    <li><a href="#sec3">Цены</a></li>
-                                    <li><a href="#sec4">Галерея</a></li>
-                                    <li><a href="#sec5">Контакты</a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-
-                    </nav>
-                </div>
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="navbar navbar-brand">
+                <a href="#sec1" style="margin-bottom: 10px;">
+                  <img src="img/trees.png" style="height: 30px; width: 30px; "/> Ясная поляна
+                </a>
             </div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+              <ul class="nav navbar-nav navbar-right" style="margin-top: 5px;">
+                  <li><a href="#sec1">Главная</a></li>
+                  <li><a href="#sec2">О нас</a></li>
+                  <li><a href="#sec3">Цены</a></li>
+                  <li><a href="#sec4">Галерея</a></li>
+                  <li><a href="#sec5">Контакты</a></li>
+              </ul>
+          </div>
+
         </div>
+      </nav>
     </header>
+
+
+
+
 
     <!-- banner area starts here -->
     <section class="banner text-center" id="sec1">
@@ -140,11 +137,35 @@
                     <div class="about-inside">
                         <i class="fa fa-bed"></i>
                         <h3>В каждом домике</h3>
-                        <h5>2 спальни, 4 кровати,
+                        <h5>2 спальни,
                           плазменный телевизор,
-                          cанузел с душевой кабинкой,
-                          полностью укомплектованная кухня-гостиная
+                          cанузел и душ,
+                          кухня-гостиная
                         </h5>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                    <div class="about-inside">
+                        <i class="fa fa-smile-o"></i>
+                        <h3>Развлечения</h3>
+                        <h5>американский и русский бильярд,
+                           настольный теннис,
+                           батут,
+                           катамараны и лодки</h5>
+
+                    </div>
+                </div>
+                <div class="col-md-3 single-about col-xs-6 col-sm-4">
+                    <div class="about-inside">
+                        <i class="fa fa-sun-o"></i>
+                        <h3>Вокруг</h3>
+                        <h5>неописуемая природа,
+                            чистая вода,
+                            свежий воздух
+                            </h5>
                     </div>
                 </div>
 
@@ -159,28 +180,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-smile-o"></i>
-                        <h3>Развлечения</h3>
-                        <h5>американский и русский бильярд,
-                           настольный теннис,
-                           батут,
-                           катамараны и лодки</h5>
 
-                    </div>
-                </div>
-
-                <div class="col-md-3 single-about col-xs-6 col-sm-4">
-                    <div class="about-inside">
-                        <i class="fa fa-sun-o"></i>
-                        <h3>Вокруг</h3>
-                        <h5>неописуемая природа,
-                            чистая вода,
-                            свежий воздух
-                            </h5>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -289,8 +289,11 @@
                     <br/>
                     <img src="img/daag.png" alt="">
                     <h3>СХЕМА ПРОЕЗДА</h3>
-                      <iframe src="https://www.google.com/maps/d/embed?mid=1M_5Id09cNOptp-BNx81yQh2QpVM" frameborder="0" style="border:0"; width="1100 px"; height="600 px"></iframe>
-                    <br/><br/><br/><br/>
+                    <div class="map">
+                      <iframe src="https://www.google.com/maps/d/embed?mid=1M_5Id09cNOptp-BNx81yQh2QpVM" allowfullscreen="" frameborder="0" ></iframe>
+                    </div>
+
+                    <br/><br/>
                 </article>
             </div>
         </div>
