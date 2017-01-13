@@ -36,7 +36,7 @@ a:hover, a:visited, a{
 	padding: 15px;
 }
 .navbar-default {
-	position: fixed;
+  position: fixed;
   background-color: transparent;
   border-color: transparent;
   margin-bottom: 0;
@@ -46,7 +46,7 @@ a:hover, a:visited, a{
 	-moz-transition:all 0.7s ease 0s;
 	-o-transition:all 0.7s ease 0s;
 	-ms-transition:all 0.7s ease 0s;
-	 background: linear-gradient(to left, #02918C 30%, #dbddaa 100%);
+  background: linear-gradient(to left, #02918C 30%, #dbddaa 100%);
 }
  .navbar-brand>a {
 		font-family: 'Helvetica', sans-serif;
@@ -136,12 +136,8 @@ h4{
 	 color: #444;
 }
 
-h5{
-	 font-family: times, Times New Roman, times-roman, georgia, serif;
-	 font-size: 1em;
-	 line-height: 20px;
-	 color: #444;
-}
+
+
 
 /*about section*/
 .about{
@@ -184,6 +180,17 @@ h5{
 	color: #71757a;
 	font-weight: 800;
 }
+
+.single-about h5{
+	 font-family: times, Times New Roman, times-roman, georgia, serif;
+	 font-size: 1em;
+	 line-height: 20px;
+	 color: #444;
+}
+.single-about h5:hover{
+	color: #fff;
+}
+
 .about-inside p{
 	font-size: 11px;
 	color: #7e8287;
@@ -229,6 +236,12 @@ h5{
 	margin-bottom: 40px;
 	text-shadow: 1px 1px 2px black;
 }
+.service h5{
+	 font-family: times, Times New Roman, times-roman, georgia, serif;
+	 font-size: 1em;
+	 line-height: 20px;
+	 color: #444;
+}
 .service p{
 	font-size: 16px;
 	color: #7e8287;
@@ -269,6 +282,9 @@ h5{
 	color: #fff;
 }
 .single-service:hover.single-service h3{
+	color: #fff;
+}
+.single-service:hover.single-service h5{
 	color: #fff;
 }
 .single-service:hover.single-service p{
